@@ -2,18 +2,18 @@ import java.util.ArrayList;
 
 public class Aplicacio {
 
+    static Parc parc = null;
+    static ArrayList<Parc> parcs = new ArrayList<>();
+
     public static void main(String[] args) {
 
-        ArrayList<Parc> parcs = new ArrayList<>();
-        Parc parc = null;
         int opcio;
-
         do {
             IOUtils.mostrarMenuPrincipal();
             opcio = IOUtils.getIntInput();
             switch (opcio) {
                 case 1:
-                    gestionarParcs(parc, parcs);
+                    gestionarParcs();
                     break;
                 case 2:
                     gestionarAtraccions();
@@ -29,7 +29,7 @@ public class Aplicacio {
 
     }
 
-    private static void gestionarParcs(Parc parc, ArrayList<Parc> parcs) {
+    private static void gestionarParcs() {
         int opcio;
         do {
             IOUtils.mostrarMenuParcs();
@@ -58,6 +58,22 @@ public class Aplicacio {
     }
 
     private static void gestionarAtraccions() {
+        int opcio = 0;
+        do{
+            IOUtils.mostrarMenuAtraccions();
+            opcio = IOUtils.getIntInput();
+            switch(opcio){
+                case 1:
+                    parc.afegirAtraccio();
+                    break;
+                case 2:
+                    parc.getAtraccions()[0].modificaAtraccio();
+                    break;
+                case 3:
+                    System.out.println(parc.getAtraccions().toString());
+            }
+
+        } while(opcio!=0);
 
     }
 

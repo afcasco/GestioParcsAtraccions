@@ -35,6 +35,13 @@ class IOUtils {
         System.out.println("2. Seleccionar");
         System.out.println("3. Modificar");
         System.out.println("4. Llista de parcs");
+    }
 
+    public static void mostrarMenuAtraccions(){
+        System.out.println("Selecciona una opcio: ");
+        System.out.println("0. Sortir");
+        System.out.println("1. Alta");
+        System.out.println("2. Modificar");
+        System.out.println("3. Llistat d'atraccions");
     }
 }
