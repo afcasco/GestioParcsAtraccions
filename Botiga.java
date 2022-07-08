@@ -1,25 +1,22 @@
-public class Botiga {
+public class Botiga extends Serveis {
 
-    private String codi;
-    private String nom;
-    private String productes;
 
-    public Botiga() {
-        codi = IOUtils.getStringInput("Entra el codi de la nova botiga:");
-        nom = IOUtils.getStringInput("Entra el nom de la nova botiga:");
-        productes = IOUtils.getStringInput("Entra el tipus de productes dels que disposa:");
-    }
 
-    public Botiga(String codi, String nom, String productes) {
+
+    public Botiga(String codi, String nom, String tipus) {
         this.codi = codi;
         this.nom = nom;
-        this.productes = productes;
+        this.tipus = tipus;
+    }
+
+    public Botiga() {
+        super();
     }
 
     public void modificarBotiga() {
         codi = IOUtils.getStringInput("Entra el codi de la nova botiga:");
         nom = IOUtils.getStringInput("Entra el nom de la nova botiga:");
-        productes = IOUtils.getStringInput("Entra el tipus de productes dels que disposa:");
+        tipus = IOUtils.getStringInput("Entra el tipus de productes dels que disposa:");
     }
 
     public String getCodi() {
@@ -38,18 +35,18 @@ public class Botiga {
         this.nom = nom;
     }
 
-    public String getProductes() {
-        return productes;
+    public String getTipus() {
+        return tipus;
     }
 
-    public void setProductes(String productes) {
-        this.productes = productes;
+    public void setTipus(String tipus) {
+        this.tipus = tipus;
     }
 
     @Override
     public String toString() {
         return "Codi botiga: " + codi + "\n" +
                "Nom botiga: " + nom + "\n" +
-               "Tipus productes: " + productes;
+               "Tipus productes: " + tipus;
     }
 }
