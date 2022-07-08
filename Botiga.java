@@ -10,11 +10,6 @@ public class Botiga extends Serveis {
         super();
     }
 
-    public void modificarServei() {
-        super.modificarServei();
-    }
-
-
     @Override
     public String toString() {
         return "Codi botiga: " + codi + "\n" +
