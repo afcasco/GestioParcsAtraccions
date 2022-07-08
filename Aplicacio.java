@@ -7,7 +7,6 @@ public class Aplicacio {
 
 	public static void main(String[] args) {
 
-
 		int opcio;
 
 		do {
@@ -28,7 +27,6 @@ public class Aplicacio {
 				break;
 			}
 		} while(opcio!=0);
-
 	}
 
 	private static void gestionarParcs(){
@@ -47,11 +45,32 @@ public class Aplicacio {
 				parc.modificarParc();
 				break;
 			case 4:
-				// llistar parcs
+				llistarParcs();
 				break;
 			}
 		} while(opcio!=0);
+	}
 
+	private static void seleccionarParc(){
+		int i=0;
+		String busquem = IOUtils.getStringInput("Quin parc vols seleccionar:");
+		boolean trobat = false;
+		while(i<parcs.size()&&!trobat){
+			if(parcs.get(i).getNom().equalsIgnoreCase(busquem)){
+				parc = parcs.get(i);
+				trobat = true;
+				System.out.println("trobat el parc: "+parc.getNom());
+			} else {
+				i++;
+			}
+		}
+		if(!trobat) System.out.println("Aquest parc no esta al sistema!");
+	}
+
+	private static void llistarParcs(){
+		for(Parc parc : parcs){
+			System.out.println(parc);
+		}
 	}
 
 	private static void gestionarAtraccions(){
@@ -112,22 +131,5 @@ public class Aplicacio {
 				break;
 			}
 		} while(opcio!=0);
-
-	}
-
-	private static void seleccionarParc(){
-		int i=0;
-		String busquem = IOUtils.getStringInput("Quin parc vols seleccionar:");
-		boolean trobat = false;
-		while(i<parcs.size()&&!trobat){
-			if(parcs.get(i).getNom().equalsIgnoreCase(busquem)){
-				parc = parcs.get(i);
-				trobat = true;
-				System.out.println("trobat el parc: "+parc.getNom());
-			} else {
-				i++;
-			}
-		}
-		if(!trobat) System.out.println("Aquest parc no esta al sistema!");
 	}
 }

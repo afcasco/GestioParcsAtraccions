@@ -127,8 +127,7 @@ public class Parc {
 
 	@Override
 	public String toString(){
-		return 	"Nom del parc: "+nom+"\n"+
-				"Direccio del parc: "+direccio;
+		return 	"Nom del parc: "+ nom + "\t" + "Direccio del parc: "+direccio;
 	}
 
 
