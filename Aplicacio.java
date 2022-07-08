@@ -41,7 +41,7 @@ public class Aplicacio {
 				parcs.add(new Parc());
 				break;
 			case 2:
-				parc = parcs.get(IOUtils.getIntInput("index del parc a seleccionar:"));
+				seleccionarParc();
 				break;
 			case 3:
 				parc.modificarParc();
@@ -113,5 +113,21 @@ public class Aplicacio {
 			}
 		} while(opcio!=0);
 
+	}
+
+	private static void seleccionarParc(){
+		int i=0;
+		String busquem = IOUtils.getStringInput("Quin parc vols seleccionar:");
+		boolean trobat = false;
+		while(i<parcs.size()&&!trobat){
+			if(parcs.get(i).getNom().equalsIgnoreCase(busquem)){
+				parc = parcs.get(i);
+				trobat = true;
+				System.out.println("trobat el parc: "+parc.getNom());
+			} else {
+				i++;
+			}
+		}
+		if(!trobat) System.out.println("Aquest parc no esta al sistema!");
 	}
 }
