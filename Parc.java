@@ -1,9 +1,9 @@
 public class Parc {
 	private String nom;
 	private String direccio;
-	private Atraccio[] atraccions;
-	private Botiga[] botigues;
-	private Restaurant[] restaurants;
+	private final Atraccio[] atraccions;
+	private final Botiga[] botigues;
+	private final Restaurant[] restaurants;
 
 	public Parc(){
 		nom = IOUtils.getStringInput("Entra el nom del nou parc:");
