@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
-class IOUtils{
+final class IOUtils{
+
+	private IOUtils(){}
 
 	public static final String[] MENU_PRINCIPAL = {"0. Sortir",
 								"1. Gestio de parcs",

@@ -41,11 +41,14 @@ public class Aplicacio {
 				parcs.add(new Parc());
 				break;
 			case 2:
-				parc = parcs.get(IOUtils.getIntInput("index del parc a seleccionar:");
+				parc = parcs.get(IOUtils.getIntInput("index del parc a seleccionar:"));
 				break;
 			case 3:
 				parc.modificarParc();
-			case 4
+				break;
+			case 4:
+				// llistar parcs
+				break;
 			}
 		} while(opcio!=0);
 
