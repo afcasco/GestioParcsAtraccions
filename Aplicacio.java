@@ -2,10 +2,12 @@ import java.util.ArrayList;
 
 public class Aplicacio {
 
+	private static ArrayList<Parc> parcs = new ArrayList<Parc>();
+	private static Parc parc=null;
+
 	public static void main(String[] args) {
 
-		ArrayList<Parc> parcs = new ArrayList<Parc>();
-		Parc parc;
+
 		int opcio;
 
 		do {
@@ -29,14 +31,14 @@ public class Aplicacio {
 
 	}
 
-	private static void gestionarParcs(Parc parc){
+	private static void gestionarParcs(){
 		int opcio;
 		do{
 			IOUtils.mostrarMenuParcs();
 			opcio = IOUtils.getIntInput();
 			switch(opcio){
 			case 1:
-				parc = new Parc();
+				parcs.add(new Parc());
 				break;
 			case 2:
 				parc = parcs.get(IOUtils.getIntInput("Selecciona el parc"));
@@ -55,7 +57,7 @@ public class Aplicacio {
 			opcio = IOUtils.getIntInput();
 			switch(opcio){
 			case 1:
-				parc.afegirAtraccio()
+				parc.afegirAtraccio();
 				break;
 			case 2:
 				// implementar modificar atraccio existent
@@ -70,10 +72,44 @@ public class Aplicacio {
 	}
 
 	private static void gestionarBotigues(){
+		int opcio;
+		do{
+			IOUtils.mostrarMenuBotigues();
+			opcio = IOUtils.getIntInput();
+			switch(opcio){
+			case 1:
+				parc.afegirBotiga();
+				break;
+			case 2:
+				// implementar modificar atraccio existent
+				break;
+			case 3:
+				// implementar llistar atraccions d'un parc
+				// removed class files
+				break;
+			}
+		} while(opcio!=0);
 
 	}
 
 	private static void gestionarRestaurants(){
+		int opcio;
+		do{
+			IOUtils.mostrarMenuRestaurants();
+			opcio = IOUtils.getIntInput();
+			switch(opcio){
+			case 1:
+				parc.afegirRestaurant();
+				break;
+			case 2:
+				// implementar modificar atraccio existent
+				break;
+			case 3:
+				// implementar llistar atraccions d'un parc
+				// removed class files
+				break;
+			}
+		} while(opcio!=0);
 
 	}
 }

@@ -6,11 +6,11 @@ public class Parc {
 	private Restaurant[] restaurants;
 
 	public Parc(){
-		nom = IOUtils.getStringInput("Entra el nom del nou parc: \n");
-		direccio = IOUtils.getStringInput("Entra la seva adreça: \n");
-		atraccions = new Atraccio[IOUtils.getIntInput("Maxim d'atraccions que podra acollir: \n")];
-		botigues = new Botiga[IOUtils.getIntInput("Maxim de botigues que podra acollir: \n")];
-		restaurants = new Restaurant[IOUtils.getIntInput("Maxim de restaurants que podra acollir: \n")];
+		nom = IOUtils.getStringInput("Entra el nom del nou parc:");
+		direccio = IOUtils.getStringInput("Entra la seva adreça:");
+		atraccions = new Atraccio[IOUtils.getIntInput("Maxim d'atraccions que podra acollir:")];
+		botigues = new Botiga[IOUtils.getIntInput("Maxim de botigues que podra acollir:")];
+		restaurants = new Restaurant[IOUtils.getIntInput("Maxim de restaurants que podra acollir:")];
 	}
 
 	public Parc(String nom, String direccio,int maxAtraccions, int maxBotigues, int maxRestaurants){
@@ -22,8 +22,8 @@ public class Parc {
 	}
 
 	public void modificarParc(){
-		nom = IOUtils.getStringInput("Entra nou nom per el parc: \n");
-		direccio = IOUtils.getStringInput("Entra la nova adreça: \n");
+		nom = IOUtils.getStringInput("Entra nou nom per el parc:");
+		direccio = IOUtils.getStringInput("Entra la nova adreça:");
 	}
 
 	public void setNom(String nom){

@@ -6,10 +6,10 @@ public class Atraccio {
 	private int intensitat;
 
 	public Atraccio(){
-		codi = IOUtils.getStringInput("Entra el codi de la nova atraccio: \n");
-		nom = IOUtils.getStringInput("Entra el nom de la nova atraccio: \n");
-		altMinima = IOUtils.getIntInput("Entra l'alcada minima per poder puajr-hi: \n");
-		intensitat = IOUtils.getIntInput("Entra la intensitat de la nova atraccio: \n");
+		codi = IOUtils.getStringInput("Entra el codi de la nova atraccio:");
+		nom = IOUtils.getStringInput("Entra el nom de la nova atraccio:");
+		altMinima = IOUtils.getIntInput("Entra l'alcada minima per poder puajr-hi:");
+		intensitat = IOUtils.getIntInput("Entra la intensitat de la nova atraccio:");
 	}
 
 	public Atraccio(String codi, String nom, int altMinima, int intensitat){
@@ -20,10 +20,10 @@ public class Atraccio {
 	}
 
 	public void modificaAtraccio(){
-		codi = IOUtils.getStringInput("Entra el codi de la nova atraccio: \n");
-		nom = IOUtils.getStringInput("Entra el nom de la nova atraccio: \n");
-		altMinima = IOUtils.getIntInput("Entra l'alcada minima per poder puajr-hi: \n");
-		intensitat = IOUtils.getIntInput("Entra la intensitat de la nova atraccio: \n");
+		codi = IOUtils.getStringInput("Entra el codi de la nova atraccio:");
+		nom = IOUtils.getStringInput("Entra el nom de la nova atraccio:");
+		altMinima = IOUtils.getIntInput("Entra l'alcada minima per poder puajr-hi:");
+		intensitat = IOUtils.getIntInput("Entra la intensitat de la nova atraccio:");
 	}
 
 	public void setCodi(String codi){

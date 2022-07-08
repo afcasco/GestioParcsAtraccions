@@ -7,9 +7,9 @@ public class Botiga {
 	private String productes;
 
 	public Botiga(){
-		codi = IOUtils.getStringInput("Entra el codi de la nova botiga: \n");
-		nom = IOUtils.getStringInput("Entra el nom de la nova botiga: \n");
-		productes = IOUtils.getStringInput("Entra el tipus de productes dels que disposa: \n");
+		codi = IOUtils.getStringInput("Entra el codi de la nova botiga:");
+		nom = IOUtils.getStringInput("Entra el nom de la nova botiga:");
+		productes = IOUtils.getStringInput("Entra el tipus de productes dels que disposa:");
 	}
 
 	public Botiga(String codi, String nom, String productes){
@@ -19,9 +19,9 @@ public class Botiga {
 	}
 
 	public void modificarBotiga(){
-		codi = IOUtils.getStringInput("Entra el codi de la nova botiga: \n");
-		nom = IOUtils.getStringInput("Entra el nom de la nova botiga: \n");
-		productes = IOUtils.getStringInput("Entra el tipus de productes dels que disposa: \n");
+		codi = IOUtils.getStringInput("Entra el codi de la nova botiga:");
+		nom = IOUtils.getStringInput("Entra el nom de la nova botiga:");
+		productes = IOUtils.getStringInput("Entra el tipus de productes dels que disposa:");
 	}
 
 	public void setCodi(String codi){

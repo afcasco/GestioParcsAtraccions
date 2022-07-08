@@ -6,10 +6,10 @@ public class Restaurant {
 	private String espectacle;
 
 	public Restaurant(){
-		codi = IOUtils.getStringInput("Entra el codi del nou restaurant: \n");
-		nom = IOUtils.getStringInput("Entra el nom del nou restaurant: \n");
-		menjar = IOUtils.getStringInput("Entra el tipus de menjar que servira: \n");
-		espectacle = IOUtils.getStringInput("Entre l'espectacle que oferira: \n");
+		codi = IOUtils.getStringInput("Entra el codi del nou restaurant:");
+		nom = IOUtils.getStringInput("Entra el nom del nou restaurant:");
+		menjar = IOUtils.getStringInput("Entra el tipus de menjar que servira:");
+		espectacle = IOUtils.getStringInput("Entre l'espectacle que oferira:");
 	}
 
 	public Restaurant(String codi, String nom, String menjar, String espectacle){
@@ -20,10 +20,10 @@ public class Restaurant {
 	}
 
 	public void modificarRestaurant(){
-		codi = IOUtils.getStringInput("Entra el codi del nou restaurant: \n");
-		nom = IOUtils.getStringInput("Entra el nom del nou restaurant: \n");
-		menjar = IOUtils.getStringInput("Entra el tipus de menjar que servira: \n");
-		espectacle = IOUtils.getStringInput("Entre l'espectacle que oferira: \n");
+		codi = IOUtils.getStringInput("Entra el codi del nou restaurant:");
+		nom = IOUtils.getStringInput("Entra el nom del nou restaurant:");
+		menjar = IOUtils.getStringInput("Entra el tipus de menjar que servira:");
+		espectacle = IOUtils.getStringInput("Entre l'espectacle que oferira:");
 	}
 
 	public void setCodi(String codi){

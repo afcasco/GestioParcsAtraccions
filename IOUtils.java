@@ -2,29 +2,29 @@ import java.util.Scanner;
 
 class IOUtils{
 
-	public enum MENU_PRINCIPAL = {"0. Sortir",
+	public static final String[] MENU_PRINCIPAL = {"0. Sortir",
 								"1. Gestio de parcs",
 								"2. Gestio d'atraccions",
 								"3. Gestio de botigues",
 								"4. Gestio de restaurants"};
 
-	public enum MENU_PARCS = {"0. Sortir",
-								"1. Gestio de parcs",
+	public static final String[] MENU_PARCS = {"0. Sortir",
+								"1. Alta nou parc",
 								"2. Seleccionar parc",
 								"3. Modificar parc",
 								"4. Llista de parcs"};
 
-	public enum MENU_ATRACCIONS = {"0. Sortir",
+	public static final String[] MENU_ATRACCIONS = {"0. Sortir",
 								"1. Alta",
 								"2. Modificar",
 								"3. Llista d'atraccions"};
 
-	public enum MENU_BOTIGUES = {"0. Sortir",
+	public static final String[] MENU_BOTIGUES = {"0. Sortir",
 								"1. Alta",
 								"2. Modificar",
 								"3. Llista de botigues"};
 
-	public enum MENU_RESTAURANTS = {"0. Sortir",
+	public static final String[] MENU_RESTAURANTS = {"0. Sortir",
 								"1. Alta",
 								"2. Modificar",
 								"3. Llista de restaurants"};
@@ -35,6 +35,7 @@ class IOUtils{
 	}
 
 	public static int getIntInput(String message){
+		System.out.println(message);
 		Scanner input = new Scanner(System.in);
 		return input.nextInt();
 	}
