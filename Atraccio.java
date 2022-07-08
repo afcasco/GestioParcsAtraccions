@@ -1,4 +1,4 @@
-public class Atraccio {
+public class Atraccio implements Installacio{
 
     private String codi;
     private String nom;
@@ -19,11 +19,16 @@ public class Atraccio {
         this.intensitat = intensitat;
     }
 
-    public void modificaAtraccio() {
+    public void updateInstallacio() {
         codi = IOUtils.getStringInput("Entra el codi de la nova atraccio:");
         nom = IOUtils.getStringInput("Entra el nom de la nova atraccio:");
         altMinima = IOUtils.getIntInput("Entra l'alcada minima per poder puajr-hi:");
         intensitat = IOUtils.getIntInput("Entra la intensitat de la nova atraccio:");
+    }
+
+    @Override
+    public void showInstallacio() {
+
     }
 
     public String getCodi() {

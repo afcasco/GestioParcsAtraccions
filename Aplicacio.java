@@ -42,7 +42,7 @@ public class Aplicacio {
                     seleccionarParc();
                     break;
                 case 3:
-                    parc.modificarParc();
+                    parc.updateInstallacio();
                     break;
                 case 4:
                     llistarParcs();

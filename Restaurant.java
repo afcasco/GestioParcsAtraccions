@@ -7,16 +7,9 @@ public class Restaurant extends Serveis {
         espectacle = IOUtils.getStringInput("Entre l'espectacle que oferira:");
     }
 
-    public Restaurant(String codi, String nom, String tipus, String espectacle) {
-        this.codi = codi;
-        this.nom = nom;
-        this.tipus = tipus;
+    public Restaurant(String espectacle) {
+        super();
         this.espectacle = espectacle;
-    }
-
-    public void modificarServei() {
-        super.modificarServei();
-        espectacle = IOUtils.getStringInput("Entre l'espectacle que oferira:");
     }
 
     public String getEspectacle() {
@@ -33,5 +26,16 @@ public class Restaurant extends Serveis {
                "Nom restaurant: " + nom + "\n" +
                "Tipus de menjar: " + tipus + "\n" +
                "Espectacle oferit: " + espectacle;
+    }
+
+    @Override
+    public void updateInstallacio() {
+        super.updateInstallacio();
+        espectacle = IOUtils.getStringInput("Entre l'espectacle que oferira:");
+    }
+
+    @Override
+    public void showInstallacio() {
+    // already overriden toString method in each class..
     }
 }
