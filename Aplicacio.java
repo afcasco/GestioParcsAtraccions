@@ -41,10 +41,11 @@ public class Aplicacio {
 				parcs.add(new Parc());
 				break;
 			case 2:
-				parc = parcs.get(IOUtils.getIntInput("Selecciona el parc"));
+				parc = parcs.get(IOUtils.getIntInput("index del parc a seleccionar:");
 				break;
 			case 3:
 				parc.modificarParc();
+			case 4
 			}
 		} while(opcio!=0);
 
@@ -85,7 +86,6 @@ public class Aplicacio {
 				break;
 			case 3:
 				// implementar llistar atraccions d'un parc
-				// removed class files
 				break;
 			}
 		} while(opcio!=0);
@@ -102,11 +102,10 @@ public class Aplicacio {
 				parc.afegirRestaurant();
 				break;
 			case 2:
-				// implementar modificar atraccio existent
+				// implementar modificar restaurant existent
 				break;
 			case 3:
-				// implementar llistar atraccions d'un parc
-				// removed class files
+				// implementar llistar restaurants d'un parc
 				break;
 			}
 		} while(opcio!=0);
