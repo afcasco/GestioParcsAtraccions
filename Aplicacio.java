@@ -86,13 +86,20 @@ public class Aplicacio {
 				// implementar modificar atraccio existent
 				break;
 			case 3:
-				// implementar llistar atraccions d'un parc
-				// removed class files
+				// it works but want to change it so it doesnt need to break out of the for loop
+				for(Atraccio atraccio : parc.getAtraccions()){
+					if(atraccio!=null){
+						System.out.println(atraccio);
+					} else {
+						break;
+					}
+				}
 				break;
 			}
 		} while(opcio!=0);
-
 	}
+
+
 
 	private static void gestionarBotigues(){
 		int opcio;
@@ -107,7 +114,14 @@ public class Aplicacio {
 				// implementar modificar atraccio existent
 				break;
 			case 3:
-				// implementar llistar atraccions d'un parc
+				// it works but want to change it so it doesnt need to break out of the for loop
+				for(Botiga botiga : parc.getBotigues()){
+					if(botiga!=null){
+						System.out.println(botiga);
+					} else {
+						break;
+					}
+				}
 				break;
 			}
 		} while(opcio!=0);
@@ -127,7 +141,14 @@ public class Aplicacio {
 				// implementar modificar restaurant existent
 				break;
 			case 3:
-				// implementar llistar restaurants d'un parc
+				// it works but want to change it so it doesnt need to break out of the for loop
+				for(Restaurant restaurant : parc.getRestaurants()){
+					if(restaurant!=null){
+						System.out.println(restaurant);
+					} else {
+						break;
+					}
+				}
 				break;
 			}
 		} while(opcio!=0);

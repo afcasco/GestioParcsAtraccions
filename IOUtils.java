@@ -45,7 +45,7 @@ final class IOUtils{
 	public static String getStringInput(String message){
 		Scanner input = new Scanner(System.in);
 		System.out.println(message);
-		return input.next();
+		return input.nextLine();
 	}
 
 	public static void mostrarMenuPrincipal(){

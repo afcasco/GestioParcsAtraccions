@@ -60,9 +60,7 @@ public class Atraccio {
 
 	@Override
 	public String toString(){
-		return 	"Codi atraccio: "+codi+"\n"+
-				"Nom atraccio: "+nom+"\n"+
-				"Altura minima: "+altMinima+"\n"+
-				"Intensitat atraccio: "+intensitat;
+		return 	"Codi atraccio: "+codi+ "\t" +"Nom atraccio: "+nom+ "\t"+ "Altura minima: "+altMinima
+		+"\t"+"Intensitat atraccio: "+intensitat;
 	}
 }
