@@ -87,7 +87,7 @@ public class Aplicacio {
                     break;
                 case 3:
                     // it works but want to change it so it doesnt need to break out of the for loop
-                    for (Atraccio atraccio : parc.getAtraccions()) {
+                    for (Installacio atraccio : parc.getAtraccions()) {
                         if (atraccio != null) {
                             System.out.println(atraccio);
                         } else {
@@ -114,7 +114,7 @@ public class Aplicacio {
                     break;
                 case 3:
                     // it works but want to change it so it doesnt need to break out of the for loop
-                    for (Botiga botiga : parc.getBotigues()) {
+                    for (Installacio botiga : parc.getBotigues()) {
                         if (botiga != null) {
                             System.out.println(botiga);
                         } else {
@@ -141,7 +141,7 @@ public class Aplicacio {
                     break;
                 case 3:
                     // it works but want to change it so it doesnt need to break out of the for loop
-                    for (Restaurant restaurant : parc.getRestaurants()) {
+                    for (Installacio restaurant : parc.getRestaurants()) {
                         if (restaurant != null) {
                             System.out.println(restaurant);
                         } else {

@@ -1,7 +1,7 @@
 public class Parc implements Installacio {
-    private final Atraccio[] atraccions;
-    private final Botiga[] botigues;
-    private final Restaurant[] restaurants;
+    private final Installacio[] atraccions;
+    private final Installacio[] botigues;
+    private final Installacio[] restaurants;
     private String nom;
     private String direccio;
 
@@ -37,16 +37,16 @@ public class Parc implements Installacio {
         this.direccio = direccio;
     }
 
-    public Atraccio[] getAtraccions() {
-        return atraccions;
+    public Installacio[] getAtraccions() {
+        return (Installacio[])atraccions;
     }
 
-    public Botiga[] getBotigues() {
-        return botigues;
+    public Installacio[] getBotigues() {
+        return (Installacio[])botigues;
     }
 
-    public Restaurant[] getRestaurants() {
-        return restaurants;
+    public Installacio[] getRestaurants() {
+        return (Installacio[])restaurants;
     }
 
     public int numeroAtraccions() {
